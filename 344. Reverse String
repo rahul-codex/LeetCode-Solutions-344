@@ -1,0 +1,9 @@
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        int st = 0,las = s.size()-1;             //this is use to last and end 
+        while(st < las){                         // conditions  last is not < start 
+            swap(s[st++], s[las--]);             // swap last and first 
+        }
+    }
+};
